@@ -22,7 +22,7 @@ And three files.
 Now, your project structure should look like this.
 
 ```
-pset-9-skeleton/
+pset-8-skeleton/
   css/
     styles.css
   js/
