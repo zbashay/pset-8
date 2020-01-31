@@ -1,4 +1,4 @@
-# Tac-Tac-Toe Walkthrough
+# Tic-Tac-Toe Walkthrough
 
 When working on a large-scale project or application, it's critical that you divide the workload into more manageable chunks. While this isn't a very large project, we can use it as a stepping stone to learn where and how to start a project when all we have are requirements.
 
