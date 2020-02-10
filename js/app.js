@@ -19,6 +19,9 @@ let win;
 let countingxwins = 0
 let countingowins = 0
 let switch_turn_count = 0
+let starter = "X";
+let change = document.getElementById("order-button").innerHTML
+
 
 
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
@@ -32,6 +35,7 @@ window.onload = init;
 
 document.getElementById("board").onclick = takeTurn;
 document.getElementById("reset-button").onclick = init;
+document.getElementById("order-button").onclick = changeOrder;
 
 ///////////////////// FUNCTIONS /////////////////////////////////////
 
@@ -115,4 +119,19 @@ function getWinner() {
   });
 
   return winner ? winner : board.includes("") ? null : "T";
+}
+function changeOrder() {
+    init();
+    if (starter === "X") {
+        turn = "O";
+        starter = "O";
+    } else {
+        turn = "X";
+        starter = "X"
+    }
+
+    let neww = change.splice(32, 1, starter);
+    document.getElementById("order-button").innerHTML = neww
+
+    render();
 }
