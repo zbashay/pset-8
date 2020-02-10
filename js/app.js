@@ -22,8 +22,6 @@ let switch_turn_count = 0
 let starter = "X";
 let change = document.getElementById("order-button").innerHTML
 
-
-
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 
 const squares = Array.from(document.querySelectorAll("#board div"));
